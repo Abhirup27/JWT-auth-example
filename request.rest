@@ -1,0 +1,10 @@
+GET http://localhost:8080/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUm9vcCIsImlhdCI6MTczMTA1NDAwNH0.-ri6B2VO9VBm0svIxDofX_2JVxdjg538-BkHnURBcXY
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username":"Roop"
+}
