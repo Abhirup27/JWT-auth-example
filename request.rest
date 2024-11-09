@@ -1,10 +1,32 @@
 GET http://localhost:8080/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUm9vcCIsImlhdCI6MTczMTA1NDAwNH0.-ri6B2VO9VBm0svIxDofX_2JVxdjg538-BkHnURBcXY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUm9vcCIsImlhdCI6MTczMTEyMTc1MywiZXhwIjoxNzMxMTIxNzc4fQ.uPnTb3KNHC7dbuo9JynLXg96Q2xn4sz4PHinHztwfuI
+
 ###
 
-POST http://localhost:8080/login
+POST http://localhost:8081/login
 Content-Type: application/json
 
 {
     "username":"Roop"
 }
+
+
+###
+
+POST http://localhost:8081/token
+Content-Type:application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUm9vcCIsImlhdCI6MTczMTEyMTcxOH0.A_srAlriL_EgdJHr8uJE3Nr2VfVWhHxwJfSK8Vlm2Lw"
+}
+
+###
+
+DELETE http://localhost:8081/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUm9vcCIsImlhdCI6MTczMTEyMTc1M30.-r9BmRau0Lemsi1IYIY1o6jXVkzuJO_-5TQSQOjqMQo"
+}
+
+###
